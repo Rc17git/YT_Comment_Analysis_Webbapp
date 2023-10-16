@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Analysis Results</h1>
+    <div>
+        <p>Results:</p>
+        <p>{{ labels[0] }}</p>
+        <p>{{ labels[1] }}</p>
+        <div>
+            <canvas id="pieChart" width="150" height="150"></canvas>
+        </div>
+    </div>
+    <script>
+        var ctx = document.getElementById('pieChart').getContext('2d');
+        var data_per_json = '{{ data_per | tojson | safe }}';
+        var data_per_array = JSON.parse(data_per_json);
+    
+        var data = {
+            labels: ['Negative', 'Positive'],
+            datasets: [{
+                data: data_per_array,
+                backgroundColor: ['#FF5733', '#33FF57'],
+            }],
+        };
+    
+        var myPieChart = new Chart(ctx, {
+            type: 'pie',
+            data: data,
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* Common Styles */
+body {
+    background-color: #FFDDDD; /* Pastel red */
+    color: #FFFFFF; /* White */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #FF3333; /* Darker shade of pastel red for headings */
+}
+
+/* Index Page Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin: 5px 0;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #FF3333; /* Darker shade of pastel red for borders */
+}
+
+button {
+    padding: 8px;
+    background-color: #FF3333; /* Darker shade of pastel red for button */
+    color: #FFFFFF; /* White */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Result Page Styles */
+div {
+    text-align: center;
+}
+
+p {
+    margin: 5px 0;
+}
+
+canvas {
+    width: 70%;
+    max-width: 300px;
+    height: auto;
+}

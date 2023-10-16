@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>YouTube Sentiment Analysis</h1>
+    <form action="/analyze" method="post">
+        <label for="video_url">Enter YouTube Video URL:</label>
+        <input type="text" name="video_url" required>
+        <br>
+        <label for="scroll_count">Enter Scroll Count:</label>
+        <input type="number" name="scroll_count" value="5" required>
+        <br>
+        <button type="submit">Analyze</button>
+    </form>
+</body>
+</html>
