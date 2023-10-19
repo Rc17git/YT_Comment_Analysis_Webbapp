@@ -10,7 +10,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import json
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='')
 
 @app.route("/")
 def index():
