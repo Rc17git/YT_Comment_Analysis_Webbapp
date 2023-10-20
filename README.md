@@ -19,7 +19,7 @@ Make sure you have Python and pip installed on your machine.
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/youtube-sentiment-analysis.git
+    git clone https://github.com/Rc17git/YT_Comment_Analysis_Webbapp.git
     ```
 
 2. Navigate to the project directory:
