@@ -46,6 +46,18 @@ Make sure you have Python and pip installed on your machine.
 
 3. Enter the YouTube video URL and scroll count, then click "Analyze."
 
+## Screenshots
+
+This is how the website should look once you have set up everything correctly.
+
+![Landing Page](Homepage.png)
+
+*Caption: This is the landing page*
+
+![Results Page](Resultpage.png)
+
+*Caption: This is the results page*
+
 ## Contributors
 
 - Rishabh Chauhan
